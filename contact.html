@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Island+Moments&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body class="body">
+    <div class="inner-body">
+        <header class="header">
+            <nav class="inner-header">
+                <div class="nav-item-div">
+                    <a class="a-link" href="index.html">
+                        <span class="a-text">
+                            Über mich
+                        </span>
+                    </a>
+                </div>
+                <div class="nav-item-div">
+                    <a class="a-link" href="skills.html">
+                        <span class="a-text">
+                            Skills
+                        </span>
+                    </a>
+                </div>
+                <div class="nav-item-div">
+                    <a class="a-link" href="portfolio.html">
+                        <span class="a-text">
+                            Portfolio
+                        </span>
+                    </a>
+                </div>
+                <div class="nav-item-div">
+                    <a class="a-link" href="contact.html">
+                        <span class="a-text highlighted-a-text">
+                            Kontakt
+                        </span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="container">
+                <h2 class="h2-title">
+                    Kontaktfeld
+                </h2>
+                <div class="contact-field">
+                    <div class="first-and-lastname-div">
+                        <div class="firstname-div">
+                            <label class="label firstname-label" for="firstname">
+                                Vorname
+                            </label>
+                            <input id="firstname" type="text">
+                        </div>
+                        <div class="lastname-div">
+                            <label class="label lastname-label" for="lastname">
+                                Nachname
+                            </label>
+                            <input id="lastname" type="text">
+                        </div>
+                    </div>
+                    <div class="subject-div">
+                        <label class="label subject-label" for="subject">
+                            Betreff
+                        </label>
+                        <input id="subject" type="text">
+                    </div>
+                    <div class="message-div">
+                        <label class="label message-span" for="message">
+                            Nachricht
+                        </label>
+                        <textarea class="message" id="message" name="message"></textarea>
+                    </div>
+                    <div class="send-btn-div">
+                        <button class="send-btn" onclick="sendForm()" id="send-btn">
+                            <span class="send-span">Senden</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="inner-footer">
+                <div class="footer-left">
+                    <a class="footer-link" href="#">
+                        <span class="footer-link-text">
+                            Contact
+                        </span>
+                    </a>
+                    <a class="footer-link" href="#">
+                        <span class="footer-link-text">
+                            Skills
+                        </span>
+                    </a>
+                    <a class="footer-link" href="#">
+                        <span class="footer-link-text">
+                            Home
+                        </span>
+                    </a>
+             </div>
+                <div class="footer-right">
+                    <a class="footer-link" href="#">
+                        <span class="footer-link-text">
+                            My Work
+                        </span>
+                    </a>
+                    <a class="footer-link" href="#">
+                        <span class="footer-link-text">
+                            About me
+                        </span>
+                    </a>
+                    <a class="footer-link" href="#">
+                        <span class="footer-link-text">
+                            Map
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="trademarks-div">
+                <span class="copyright">This Website is intellectual property of &copy;Sprenger Inc.</span>
+                <a class="flaticon-link" href="https://www.flaticon.com/de/kostenlose-icons/code" title="code Icons">Code Icons erstellt von Freepik - Flaticon</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>
