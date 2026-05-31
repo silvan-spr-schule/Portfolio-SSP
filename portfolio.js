@@ -1,11 +1,23 @@
-const card1 = document.getElementById("card-1");
-const card2 = document.getElementById("card-2");
-const card3 = document.getElementById("card-3");
+const overlay = document.getElementById("modal-overlay");
+const openSpans = document.querySelectorAll(".open-message");
+const modals = document.querySelectorAll(".modal");
 
-card1.addEventListener("click", card1Upsize);
-card2.addEventListener("click", sendForm);
-card3.addEventListener("click", sendForm);
+openSpans.forEach(span => {
+    span.addEventListener("click", () => {
 
-function card1Upsize() {
-    
-}
+        const modalId = span.dataset.modal;
+        const modal = document.getElementById(modalId);
+
+        modal.classList.add("active");
+        overlay.classList.add("active");
+    });
+});
+
+overlay.addEventListener("click", () => {
+
+    modals.forEach(modal => {
+        modal.classList.remove("active");
+    });
+
+    overlay.classList.remove("active");
+});

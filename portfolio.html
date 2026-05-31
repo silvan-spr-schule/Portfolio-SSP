@@ -57,13 +57,14 @@
         </header>
         <main class="main">
 
-            <div class="card-1-modal-div">
+            <div class="card-1-modal-div modal" id="modal-2">
                 <div class="card-1-top">
                     <div class="card-1-image-video">
-                        <img class="card-1-img" src="images/Fruit-Ninja.png" alt="Project 1 Fruit Ninja">
-                        <!-- Hier kommt das Video-->
+                        <video controls>
+                            <source src="videos/fruit-ninja.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
                     </div>
-                    <img class="card-1-img" src="images/Fruit-Ninja.png" alt="Project 1 Fruit Ninja">
                     <div class="card-1-modal-title-text">
                         <span class="title-text-span">
                             Fruit Ninja Game
@@ -82,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="card-2-modal-div">
+            <div class="card-2-modal-div modal" id="modal-1">
                 <div class="card-2-top">
                     <img class="card-2-img" src="images/Unity-Game.png" alt="Project 2 Escape Game">
                     <div class="card-2-modal-title-text">
@@ -95,8 +96,8 @@
                     </div>
                 </div>
                 <div class="card-2-bottom">
-                    <div class="download-link-div">
-                        <a class="download-a" href="images/Unity-Game.png" download>
+                    <div class="download-link-div disabled-download">
+                        <a class="download-a disabled" href="images/Unity-Game.png" download>
                             <img class="download-img" alt="Ui Download" src="images/download-ui.png">
                         </a>
                     </div>
@@ -104,7 +105,7 @@
             </div>
 
             
-            <div class="card-3-modal-div">
+            <div class="card-3-modal-div modal" id="modal-3">
                 <div class="card-3-top">
                     <img class="card-3-img" src="images/Counter-Website.png" alt="Project 3 Counter Website">
                     <div class="card-3-modal-title-text">
@@ -117,8 +118,8 @@
                     </div>
                 </div>  
                 <div class="card-3-bottom">
-                    <div class="download-link-div">
-                        <a class="download-a" href="images/Unity-Game.png" download>
+                    <div class="download-link-div disabled-download">
+                        <a class="download-a disabled" href="images/Unity-Game.png" download>
                             <img class="download-img" alt="Ui Download" src="images/download-ui.png">
                         </a>
                     </div>
@@ -141,6 +142,9 @@
                                     <img class="download-img" alt="Ui Download" src="images/download-ui.png">
                                 </a>
                             </div>
+                            <span class="open-message" id="modal-opener-1"  data-modal="modal-1">
+                                Click here to enlarge
+                            </span>
                         </div>
                         <div class="project-card" id="card-2">
                             <img class="product-img" alt="Fruit Ninja Game" src="images/Fruit-Ninja.png">
@@ -152,6 +156,9 @@
                                     <img class="download-img" alt="Ui Download" src="images/download-ui.png">
                                 </a>
                             </div>
+                            <span class="open-message" id="modal-opener-2"  data-modal="modal-2">
+                                Click here to enlarge and view Video
+                            </span>
                         </div>
                     </div>
 
@@ -164,6 +171,10 @@
                                 <img class="download-img" alt="Ui Download" src="images/download-ui.png">
                             </a>
                         </div>
+                        
+                        <span class="open-message" id="modal-opener-3"  data-modal="modal-3">
+                            Click here to enlarge
+                        </span>
                     </div>                    
                 </div>
             </div>
@@ -207,12 +218,13 @@
             </div>
 
             <div class="trademarks-div">
-                <span class="copyright">This Website is intellectual property of &copy;Sprenger Inc.</span>
+                <span class="copyright">This Website is intellectual property of &copy;Sprenger Firma Inc.</span>
                 <a class="flaticon-link" href="https://www.flaticon.com/de/kostenlose-icons/code" title="code Icons">Code Icons erstellt von Freepik - Flaticon</a>
             </div>
         </footer>
     </div>
 
+    <div id="modal-overlay"></div>
     <script src="portfolio.js"></script>
 </body>
 </html>

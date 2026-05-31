@@ -366,6 +366,34 @@
     font-weight: 500;
 }
 
+.socials-and-mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+.socials-a {
+    text-decoration: none;
+}
+
+.socials-img {
+    width: 50px;
+    height: auto;
+    background-color: var(--white);
+    border: solid 2px var(--white);
+    border-radius: 50px;
+
+}
+
 @media (max-width: 1155px) {
     .all-cards {
         display: flex;
