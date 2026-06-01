@@ -339,9 +339,6 @@
 }
 
 @media (orientation: landscape) {
-    .header {
-        border-radius: 100px;
-    }
 
     .inner-header {
         display: flex;
