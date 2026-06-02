@@ -462,6 +462,26 @@
         width: 100%;
     }
 
+    .card-1-modal-div,
+    .card-2-modal-div,
+    .card-3-modal-div {
+        width: 400px;
+    }
+
+    .card-1-top,
+    .card-2-top,
+    .card-3-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-1-modal-title-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     /* .competence-card {
         width: 56%;
     } */
@@ -475,6 +495,12 @@
 
     .footer {
         border-radius: 75px 75px 0px 0px;
+    }
+
+    .card-1-modal-div,
+    .card-2-modal-div,
+    .card-3-modal-div {
+        width: 400px;
     }
 }
 
@@ -500,6 +526,13 @@
     
     .nav-item-div:last-child {
         padding-right: 0px;
+    }
+
+
+    .card-1-modal-div,
+    .card-2-modal-div,
+    .card-3-modal-div {
+        width: 66vw;
     }
 
 
